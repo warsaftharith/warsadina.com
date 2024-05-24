@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/clients/d.ico" type="image/x-icon">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="/css/tentang.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<body>
+
+  <!-- navbar -->
+  <div class="navbar-fixed">
+    <nav class="blue darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo1">Dina</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="beranda.html">Tentang</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="/login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+   <!-- sidenav -->
+   <ul class="sidenav" id="mobile-nav">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="beranda.html">Tentang</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="/login.html">Login</a></li>
+  </ul>
+
+<h2>Daftar Dosen</h2>
+
+<table>
+  <tr>
+    <th>Nomor</th>
+    <th>Nama</th>
+    <th>NIDN</th>
+    <th>Jabatan</th>
+    <th>Email</th>
+    <th>Foto</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>dina S.Kom</td>
+    <td>123456789</td>
+    <td>Dosen</td>
+    <td>dina@gmail.com</td>
+    <td><img src="https://scontent.fdps4-1.fna.fbcdn.net/v/t39.30808-6/440846656_451876240702707_617515141389830464_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGx0UUFhxywepxIOd-tgyRLHgR0eKahx4seBHR4pqHHi0-5vM7IKhjXgsRBugoaeO4t8AbmowlPa1LoRZsbet1T&_nc_ohc=Mqzif6tYj1gQ7kNvgHnfisT&_nc_zt=23&_nc_ht=scontent.fdps4-1.fna&oh=00_AYADwPJE4jm75_hBmJry0bEzWgRX4j7nLKBqYDzlXW3LkQ&oe=6651B989" alt="Foto Budi Santoso"></td>
+  </tr>
+  <tr>
+  <tr>
+    <td>2</td>
+    <td>warsa S.Pd</td>
+    <td>111222343344</td>
+    <td>dosen</td>
+    <td>warsa00@gmail.com</td>
+    <td><img src="https://scontent.fdps4-1.fna.fbcdn.net/v/t39.30808-6/307568994_3178341779163109_28795218652412472_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFvFYXXP9P9-tuiCU5DsySDLnn1zuA6MuAuefXO4Doy4Av-2qnDiWhtiRvFbvYsCh3kbq6Qp7wDJRuaBbpqVDoX&_nc_ohc=r2Y7yjyeymsQ7kNvgHa3Ye9&_nc_zt=23&_nc_ht=scontent.fdps4-1.fna&oh=00_AYAS8WQuyTLj-Ga9sHvlPXu1W9SjpesJISAtpy8x4Xi6vQ&oe=6651C75B"alt="Foto Siti Aminah"></td>
+  <tr>
+    <td>3</td>
+    <td>wahyu S.Pd</td>
+    <td>111222343344</td>
+    <td>dosen</td>
+    <td>warsa01@gmail.com</td>
+    <td><img src="https://i.pinimg.com/550x/6a/3c/f3/6a3cf361d2cee72aa0e3c4c996c446dd.jpg"alt="Foto warsa"></td>
+  
+</table>
+<script type="text/javascript" src="/js/materialize.min.js"></script>
+    <script>
+      const sideNav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sideNav);
+
+      const slider = document.querySelectorAll('.slider');
+      M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 600,
+        interval: 3000
+      });
+
+      const parallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax);
+
+    </script>
+
+</body>
+</html>

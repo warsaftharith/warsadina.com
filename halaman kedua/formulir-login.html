@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="/css/formulir-login.css">
+</head>
+<body>
+    <div class="header">
+        <img src="https://hamzanwadi.ac.id/assets/img/logo-hijau.png" alt="Logo" class="logo">
+        <h1 class="ham"></h1>
+        <div class="license">
+            <H1>UNIVERSITAS HAMZANWADI</H1>
+            <P class="nusa">Nusa Tenggara Barat, Lombok Timur, Selong</P>
+        </div>
+    </div>
+    <div class="container">
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <h1>Formulir Pendaftaran</h1>
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Username</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Jenis Kelamin</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Laki-laki</option>
+                    <option value="female">Perempuan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="photo">Upload Foto KTP</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="religion">Agama</label>
+                <select id="religion" name="religion" required>
+                    <option value="islam">Islam</option>
+                    <option value="christian">Kristen</option>
+                    <option value="catholic">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="buddha">Buddha</option>
+                    <option value="other">Lainnya</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone">Nomor HP</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Tanggal Lahir</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="school">Sekolah Asal</label>
+                <input type="text" id="school" name="school" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Email</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Ulangi Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <button type="submit">Daftar</button>
+        </form>
+        <div class="footer">
+            Copyright &copy; 2024 &mdash; my Company 
+        </div>
+    </div>
+</body>
+</html>

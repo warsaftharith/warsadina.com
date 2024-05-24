@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/clients/d.ico" type="image/x-icon">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tentang.css">
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>WEBSITE STATIS</title>
+  </head>
+
+  <body>
+
+    <!-- navbar -->
+    <div class="navbar-fixed">
+      <nav class="blue darken-2">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo1">Dina</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="beranda.html">Tentang</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li><a href="/login.html">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+     <!-- sidenav -->
+     <ul class="sidenav" id="mobile-nav">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="beranda.html">Tentang</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="/login.html">Login</a></li>
+    </ul>
+
+    <body>
+      <div class="container">
+          <div class="profile">
+              <img src="/img/portfolio/profile.jpeg" alt="Profile Picture">
+              <h2>BAIQ DINA FARHANA</h2>
+              <p>Web Developer</p>
+          </div>
+          <div>
+              <h1 class="about-me">Tentang Saya</h1>
+              <p>Hai, nama saya Dina. Saya seorang pengembang web yang berkuliah di Hamzanwadi. Saya memiliki hasrat untuk membuat situs web.</p>
+              <p>Saya di bidang front-end dan menggunakan HTML, CSS, dan JavaScript. Saya juga memiliki pengalaman dengan berbagai framework pengembangan web seperti Bootstrap dan React.</p>
+          </div>
+          <li><a href="list.html">List daftar dosen</a></li>
+      </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <script>
+      const sideNav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sideNav);
+
+      const slider = document.querySelectorAll('.slider');
+      M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 600,
+        interval: 3000
+      });
+
+      const parallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax);
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
